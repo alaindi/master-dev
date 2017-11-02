@@ -1,0 +1,40 @@
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family : 'Arial', serif;
+$font-family2 : 'Verdana', sans-serif;
+
+$base-color: #0c0c0c;
+$white: #fff;
+$black: #000;
+$color1: #fffe80;
+$color2: #f85d6f;
+$color3: #e33241;
+
+$bg1: #161616;
+$bg2: #1a1a1a;
+$bg3: #e86776; //blog sidebar
+
+@mixin box-shadow($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+     -moz-box-shadow: $box-shadow;
+      -ms-box-shadow: $box-shadow;
+          box-shadow: $box-shadow;
+}
+
+.banner-h1 {
+	font-family:$font-family2;
+	font-size:50px;
+	color:$white;
+	font-weight:bold;
+}
+.banner-h2 {
+	font-family:$base-font-family;
+	font-size:30px;
+	color:$color1;
+	font-weight:bold;
+}
+.banner-button {
+	font-size:24px;
+	text-transform:uppercase; /*capitalize, none, uppercase, lowercase */
+	padding:25px 30px;
+}
+

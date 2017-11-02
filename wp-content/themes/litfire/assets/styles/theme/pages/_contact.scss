@@ -1,0 +1,190 @@
+#contact {
+	padding:100px 0;
+	background: url("../images/contact-bg.png") #fbdee1 center center no-repeat;
+	background-size:cover;
+	margin:0 auto;
+	overflow:hidden;
+	.form-cont {
+		form {
+			.item {
+				margin:0 0 10px;
+				input[type="text"], textarea, input[type="email"] {
+					height:50px;
+					background:#fff;
+					font-size:14px;
+					color:#6c6c6c;
+					padding:0;
+					width:100%;
+					border-radius:0;
+					box-sizing:border-box;
+					padding:15px;
+					border:0;
+					border-radius:8px;
+					-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+					-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+					box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+					@media screen and (max-width:  $screen-xs-max) {
+						height:60px;
+					}
+					&:focus{
+						-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
+						-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
+						box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
+					}
+				}
+				textarea {
+					height:205px;
+					display:block;
+				}
+				.wpcf7-form-control-wrap {
+					height:auto;
+				}
+				.wpcf7-form-control-wrap.your-message {
+					display:block;
+				}
+			}
+			.check-submit {
+				margin-bottom:0;
+				.captcha-cont {
+					text-align:left;
+					width:50%;
+					float:left;
+					p {
+						padding:0;
+					}
+					label {
+						color:#fff;
+						font-weight:normal;
+						display:block;
+						text-align:left;
+						line-height:1.0;
+						margin:0;
+					}
+					@media screen and (max-width:  $screen-sm-max) {
+						float:none;
+						width:auto;
+					}
+				}
+				.btn-submit {
+					float:right;
+					width:150px;
+					input {
+						float:right;
+						padding:10px 25px;
+					    &:hover {
+							background:rgba(255,210,61,1);
+						}
+					}
+					div.wpcf7 img.ajax-loader {
+						float:right;
+					}
+					@media screen and (max-width:  $screen-sm-max) {
+						float:none;
+						width:auto;
+						margin:20px 0 0;
+						input {
+							float:none;
+							margin-left:0;
+						}
+					}
+					@media screen and (max-width:  $screen-sm-max) {
+						text-align:left;
+					}
+				}
+			}
+			.g-recaptcha {
+				@media screen and (min-width:992px) and (max-width:1199px){
+					transform:scale(0.85);-webkit-transform: scale(0.85);transform-origin:0 0;-webkit-transform-origin:0 0;
+				}
+				@media screen and (max-width:375px){
+					transform:scale(0.85);-webkit-transform: scale(0.85);transform-origin:0 0;-webkit-transform-origin:0 0;
+				}
+			}
+			::-webkit-input-placeholder { 
+				font-size:14px;
+				color:#6c6c6c;
+			}
+			:-ms-input-placeholder { 
+				font-size:14px;
+				color:#6c6c6c;
+			}
+			::-moz-placeholder { 
+				opacity: 1; 
+				font-size:14px;
+				color:#6c6c6c;
+			}
+			:-moz-placeholder { 
+				opacity: 1; 
+				font-size:14px;
+				color:#6c6c6c;
+			}
+		}
+		@media screen and (max-width:  $screen-xs-max) {
+			margin:0;  
+			padding:0;
+			display:block;
+			width:auto;
+		}
+	}
+	@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		min-height: 0;
+	    background-size: cover;
+	}
+	@media screen and (max-width:  $screen-xs-max) {
+		background-size:cover;
+		padding:50px 0;
+	}
+}
+/*====================================FOR FAN MAIL=================================================================*/
+input[type=checkbox] { 
+	display:none; 
+} 
+input[type="checkbox"] + span {
+	color:$base-color;
+	position:relative;
+	font-size:16px;
+	display:inline-block;
+  	vertical-align:middle;
+  	margin-left:-4px;
+}
+input[type=checkbox] + span:before {
+  font-family: FontAwesome;
+  display:inline-block;
+  vertical-align:middle;
+}
+input[type=checkbox] + span:before { 
+	content:' '; 
+	width:22px; 
+	height:22px; 
+	margin:0 10px 0 0; 
+	background:none;
+	line-height:19px; 
+	text-align:center; 
+	border:2px solid #fff;
+	color:#373737;
+	background:#fff;
+	border-radius:0;
+} 
+input[type=checkbox] + span:before { 
+	letter-spacing: 10px; 
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+} 
+input[type=checkbox]:checked + span:before { 
+	content: "\f00c"; 
+	width:22px; 
+	height:22px; 
+	margin:0 10px 0 0; 
+	border:2px solid #fff;
+	color:#373737;
+	background:#fff;
+	font-size:18px; 
+	border-radius:0;
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+} 
+input[type=checkbox]:checked + span:before { 
+	letter-spacing: 5px; 
+} 

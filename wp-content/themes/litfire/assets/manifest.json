@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "fonts": {
+      "files": ["../bower_components/font-awesome/fonts/**.*"]
+    },
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost/master-dev"
+  }
+}
